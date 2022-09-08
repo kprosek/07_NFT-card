@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --dark-blue: hsl(217, 54%, 11%);
+  --very-dark-blue: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family: "Outfit";
+  font-size: 1rem;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+  max-width: 330px;
+  max-height: 545px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--very-dark-blue);
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* container-image */
+
+.img-equilibrium {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 284px;
+  height: 284px;
+  border-radius: 10px;
+  background-color: hsla(178, 100%, 50%, 0.55);
+  overflow: hidden;
+
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.25s ease-in 0.05s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/* content */
+
+h1 {
+  color: white;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  align-self: flex-start;
+}
+
+h1:hover,
+h1:focus {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.paragraph-regular {
+  color: var(--soft-blue);
+  opacity: 80%;
+  line-height: 1.5rem;
+}
+
+.eth-data {
+  display: flex;
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.info-left {
+  display: flex;
+  width: 50%;
+}
+
+.info-right {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+
+.eth-amount {
+  color: var(--cyan);
+}
+
+.info-left p,
+.info-right p {
+  margin-left: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid hsla(215, 52%, 70%, 0.096);
+  margin: 0.8rem 0;
+}
+
+/* author info */
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.img-profile {
+  display: inline-block;
+  width: 15%;
+
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+span {
+  color: white;
+}
+
+span:hover,
+span:focus {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.author-info p {
+  margin-left: 1rem;
+}
