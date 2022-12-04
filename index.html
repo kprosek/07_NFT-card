@@ -6,50 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/favicon-32x32.png" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
 
-    <title>NFT card</title>
+    <title>NFT preview card component</title>
   </head>
   <body>
     <main>
-      <div class="container-img">
+      <div class="img-container">
         <img
           class="img-equilibrium"
           src="images/image-equilibrium.jpg"
-          alt="equilibrium design"
+          alt="image of equilibrium"
         />
-
         <div class="overlay">
-          <img src="images/icon-view.svg" alt="visibility icon" />
+          <img src="images/icon-view.svg" alt="icon view" />
         </div>
       </div>
-      
+
       <h1>Equilibrium #3429</h1>
       <p class="paragraph-regular">
         Our Equilibrium collection promotes balance and calm.
       </p>
 
-      <div class="eth-data">
-        <div class="info-left">
-          <img src="images/icon-ethereum.svg" alt="ehtereum logo" />
-          <p class="eth-amount">0.041 ETH</p>
+      <div class="data-container">
+        <div class="ether-container">
+          <img src="images/icon-ethereum.svg" alt="icon of ethereum" />
+          <p class="paragraph-ether">0.041 ETH</p>
         </div>
 
-        <div class="info-right">
-          <img src="images/icon-clock.svg" alt="clock logo" />
-          <p class="paragraph-regular">3 days left</p>
+        <div class="time-container">
+          <img src="images/icon-clock.svg" alt="icon of a clock" />
+          <p class="paragraph-time">3 days left</p>
         </div>
       </div>
 
       <hr />
 
-      <div class="author-info">
+      <div class="profile-container">
         <img
           class="img-profile"
           src="images/image-avatar.png"
-          alt="profile photo"
+          alt="profile image"
         />
-        <p class="paragraph-regular">Creation of<span> Jules Wyvern</span></p>
+        <p class="paragraph-regular">
+          Creation of <span class="profile-data">Jules Wyvern</span>
+        </p>
       </div>
     </main>
   </body>
